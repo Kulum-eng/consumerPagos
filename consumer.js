@@ -1,10 +1,10 @@
 const amqplib = require("amqplib/callback_api");
 
 const urlServerRabbitMQ = "amqp://ale:ale123@ec2-3-83-91-51.compute-1.amazonaws.com/";
-const endpoint = "http://localhost:8082/payments";
+const endpoint = "http://localhost:8081/payments/";
 
 
-const queue = "cola1";
+const queue = "Pedido";
 
 amqplib.connect(urlServerRabbitMQ, function (error0, connection) {
   if (error0) {
